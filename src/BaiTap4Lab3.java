@@ -22,23 +22,12 @@ public class BaiTap4Lab3 {
             arr1[i] = input.nextFloat();
         }
     }
-    public static void NhapMangTen(int n , String arr[]){
-        for(int i = 0 ; i < n ; i++){
-            System.out.print("Nhập tên của sinh viên số thứ tự " + (i+1) + " : ");
-            Scanner input = new Scanner(System.in);
-            arr[i] = input.nextLine();
-        }
-    }
+    
     public static void XuatMangTenVaDiem(int n ,String arr1[], float arr[]){
         for(int i = 0 ; i < n ; i++){
             System.out.println("Tên của sinh viên số thứ tự " + (i+1) + " là : " + arr1[i]);
             System.out.println("Điểm của sinh viên số thứ tự " + (i+1) + " là : " + arr[i]);
 
-        }
-    }
-    public static void XuatMangTen(int n , String arr[]){
-        for(int i = 0 ; i < n ; i++){
-            System.out.println("Tên của sinh viên số thứ tự " + (i+1) + " là : " + arr[i]);
         }
     }
     public static void XetHocLucSinhVien(int n,String A[] , float B[]){
