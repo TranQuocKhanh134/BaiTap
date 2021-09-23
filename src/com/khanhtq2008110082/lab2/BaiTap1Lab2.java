@@ -1,3 +1,4 @@
+package com.khanhtq2008110082.lab2;
 import java.util.Scanner;
 public class BaiTap1Lab2 {
     public static void main(String[] args) throws Exception {

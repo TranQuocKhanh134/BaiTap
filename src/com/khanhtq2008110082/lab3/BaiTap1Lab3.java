@@ -1,3 +1,4 @@
+package com.khanhtq2008110082.lab3;
 import java.util.Scanner;
 
 public class BaiTap1Lab3 {
