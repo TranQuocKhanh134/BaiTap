@@ -25,6 +25,7 @@ public class BaiTap4Lab3 {
     }
     
     public static void XuatMangTenVaDiem(int n ,String arr1[], float arr[]){
+        
         for(int i = 0 ; i < n ; i++){
             System.out.println("Tên của sinh viên số thứ tự " + (i+1) + " là : " + arr1[i]);
             System.out.println("Điểm của sinh viên số thứ tự " + (i+1) + " là : " + arr[i]);
