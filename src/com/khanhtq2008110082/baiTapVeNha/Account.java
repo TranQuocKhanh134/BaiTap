@@ -16,9 +16,15 @@ public class Account {
         System.out.println("accout_balance = " + accout_balance);
     }
     public void deposite(int ammout){
-        accout_balance += ammout;
+        if(ammout > 0){
+            accout_balance += ammout;
+        }
+        else System.out.println("Số tiền đã nhập không hợp lệ !!!");
     }
     public void Withdraw(int ammout){
-        accout_balance -= ammout;
+        if(ammout < accout_balance && ammout > 0){
+            accout_balance -= ammout;
+        }
+        else System.out.println("Số tiền đã nhập không hợp lệ !!!");
     }
 }
