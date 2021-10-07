@@ -57,9 +57,7 @@ public class BankProject {
                 break;
             }
             case 2 :{
-                System.out.print("Nhập số lượng khách hàng :");
-                int SoLuongKhachHang = input.nextInt();
-                Customer account1 = new Customer(SoLuongKhachHang);
+                Customer account1 = new Customer();
                 int luaChon2;
                 do{ 
                 System.out.println("**********CHƯƠNG*TRÌNH*NGÂN*HÀNG****************");
@@ -88,9 +86,7 @@ public class BankProject {
                 break;
             }
             case 3 :{
-                System.out.print("Nhập số lượng nhân viên :");
-                int SoLuongNhanVien = input.nextInt();
-                Emloyee account2 = new Emloyee(SoLuongNhanVien);
+                Emloyee account2 = new Emloyee();
                 int luaChon3;
                 do{ 
                 System.out.println("**********CHƯƠNG*TRÌNH*NGÂN*HÀNG****************");

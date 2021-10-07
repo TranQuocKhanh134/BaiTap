@@ -7,30 +7,26 @@ package com.khanhtq2008110082.baiTapVeNha;
 import java.util.Scanner;
 
 public class Emloyee {
-    String[] Name = new String[100];
-    float[] Salary = new float[100];
+    String Name;
+    float Salary;
     int soLuongNhanVien ;
-    Emloyee(int n){
-        soLuongNhanVien = n;
+    Emloyee(){
+        
     }
-    void getName(){
-        for(int i = 0 ; i < soLuongNhanVien ; i++){
-            System.out.print("Nhập tên của nhân viên STT " + (i+1) +" : ");
+    void getName(){        
+            System.out.print("Nhập tên của nhân viên : ");
             Scanner input = new Scanner(System.in);
-            Name[i] = input.nextLine(); 
-        }
+            Name = input.nextLine(); 
     }
     void getSalary(){
-        for(int i = 0 ; i < soLuongNhanVien ; i++){
-            System.out.print("Nhập lương của nhân viên STT " + (i+1) + " : ");
+            System.out.print("Nhập lương của nhân viên : ");
             Scanner input = new Scanner(System.in);
-            Salary[i] = input.nextFloat();
-        }
+            Salary = input.nextFloat();
+        
     }
     void printInfomationEmployee(){
-        for(int i = 0 ; i < soLuongNhanVien ; i++){
-            System.out.println("Tên nhân viên là : " + Name[i]);
-            System.out.println("Lương nhân viên là : " + Salary[i]);
-        }
+       
+            System.out.println("Tên nhân viên là : " + Name);
+            System.out.println("Lương nhân viên là : " + Salary);
     }
 }

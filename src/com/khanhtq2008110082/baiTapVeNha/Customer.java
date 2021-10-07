@@ -7,30 +7,26 @@ package com.khanhtq2008110082.baiTapVeNha;
 import java.util.Scanner;
 
 public class Customer {
-    String[] TenKhachHang = new String[100] ;
-    String[] DiaChiKhachHang = new String[100] ;
+    String TenKhachHang ;
+    String DiaChiKhachHang;
     int soLuongKhachHang;
-    Customer(int n){
-        soLuongKhachHang = n;
+    Customer(){
+       
     }
     void getName(){
-        for(int i = 0 ; i < soLuongKhachHang ; i++){
+        
             Scanner input = new Scanner(System.in);
-            System.out.print("STT " + (i+1) +" Nhập tên khách hàng : ");
-            TenKhachHang[i] = input.nextLine();
-        }
+            System.out.print(" Nhập tên khách hàng : ");
+            TenKhachHang = input.nextLine();
+        
     }
-    void getAddress(){
-        for(int i = 0 ; i <soLuongKhachHang ; i++){
+    void getAddress(){       
             Scanner input = new Scanner(System.in);
-            System.out.print("Nhập địa chỉ khách hàng thứ "+ (i+1) + " : ");
-            DiaChiKhachHang[i] = input.nextLine();
-        }
+            System.out.print("Nhập địa chỉ khách hàng thứ  : ");
+            DiaChiKhachHang = input.nextLine();
     }
-    void printInformation(){
-        for(int i = 0 ; i < soLuongKhachHang ; i++){
-            System.out.println("STT" + (i+1) + "Tên khách hàng : " + TenKhachHang[i]);
-            System.out.println("Địa Chỉ : " + DiaChiKhachHang[i]);
-        }
+    void printInformation(){      
+            System.out.println("Tên khách hàng : " + TenKhachHang);
+            System.out.println("Địa Chỉ : " + DiaChiKhachHang);
     }
 }
