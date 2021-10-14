@@ -4,7 +4,7 @@
 */
 package com.khanhtq2008110082.BaiTapTuan5;
 
-public class car {
+public class Car {
     /*
         Tên chủ xe
 		Hảng sản xuất
@@ -15,7 +15,7 @@ public class car {
     String tenChuXe,hangSanXuat,dong;
     Boolean giayPhep;
     float dungTichXang;
-    car(String t , String h , String d ,Boolean g,float dtx){
+    Car(String t , String h , String d ,Boolean g,float dtx){
         tenChuXe = t;
         hangSanXuat = h;
         dong = d;

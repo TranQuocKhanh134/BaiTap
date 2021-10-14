@@ -6,7 +6,7 @@ package com.khanhtq2008110082.BaiTapTuan5;
 
 import java.util.Scanner;
 
-public class book{
+public class Book{
     double giaBan;
     String nhaXuatBan;
     String tenSach;
@@ -14,7 +14,7 @@ public class book{
     int soLuong;
     String loaiSach;
     Scanner input = new Scanner(System.in);
-    book(){
+    Book(){
         
     }
     void nhapThongTinSach(){

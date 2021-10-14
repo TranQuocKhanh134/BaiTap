@@ -4,11 +4,11 @@
 */
 package com.khanhtq2008110082.BaiTapTuan5;
 
-public class account {
+public class Account {
     int accout_number ;
     int accout_balance ;
     String name_Of_Customer;
-    account(String t,int a , int b){
+    Account(String t,int a , int b){
         accout_number = a;
         accout_balance = b;
         name_Of_Customer = t;

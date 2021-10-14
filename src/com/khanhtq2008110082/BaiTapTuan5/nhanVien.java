@@ -6,13 +6,13 @@ package com.khanhtq2008110082.BaiTapTuan5;
 
 import java.util.Scanner;
 
-public class nhanVien {
+public class NhanVien {
     String tenNhanVien;
     float luong;
     String boPhanLamViec;
     String ngaySinh;
     Scanner input = new Scanner(System.in);
-    nhanVien(){
+    NhanVien(){
 
     }
     void nhapThongTinNhanVien(){

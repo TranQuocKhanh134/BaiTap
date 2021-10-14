@@ -4,10 +4,10 @@
 */
 package com.khanhtq2008110082.BaiTapTuan5;
 
-public class cow {
+public class Cow {
     float weight;
     int age;
-    cow(int tuoi , float canNang){
+    Cow(int tuoi , float canNang){
         age = tuoi;
         weight = canNang;
     }

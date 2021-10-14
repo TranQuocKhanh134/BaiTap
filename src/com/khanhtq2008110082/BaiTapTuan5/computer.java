@@ -4,7 +4,7 @@
 */
 package com.khanhtq2008110082.BaiTapTuan5;
 
-public class computer {
+public class Computer {
     /*Máy tính
 		Nhà sản xuất
 		Năm sản xuất
@@ -16,7 +16,7 @@ public class computer {
         String nhaSanXuat,heDieuHanh,CPU;
         long gia;
         int namSanXuat,ram,namBaoHanh;
-        computer(String nhSX , String hDH ,String chip ,int nSX,int r ,int nBH, long g){
+        Computer(String nhSX , String hDH ,String chip ,int nSX,int r ,int nBH, long g){
             nhaSanXuat = nhSX;
             heDieuHanh = hDH;
             CPU = chip;
