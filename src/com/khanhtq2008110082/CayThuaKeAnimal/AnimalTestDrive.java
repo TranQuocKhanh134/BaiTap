@@ -11,18 +11,18 @@ public class AnimalTestDrive {
         suTu.eat();
         suTu.roam();
         suTu.findFood();*/
-        /*Dog cho = new Dog();
+        Dog cho = new Dog();
         cho.eat();
         cho.makeNoise();
         cho.Sleep();
-        cho.roam();*/
+        cho.roam();
         /*Woft soi = new Woft();
         soi.eat();
         soi.roam();
         soi.makeNoise();*/
-        Cat meo = new Cat();
+        /*Cat meo = new Cat();
         meo.eat();
         meo.roam();
-        meo.makeNoise();
+        meo.makeNoise();*/
     }
 }

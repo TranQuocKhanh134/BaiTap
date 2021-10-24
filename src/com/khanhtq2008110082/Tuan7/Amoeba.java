@@ -9,18 +9,31 @@ public class Amoeba extends Shape{
     Boolean click = true;
     int x;
     int y;
-    Amoeba(int xx , int yy){
+    Amoeba(int xx , int yy,Boolean c){
         x=xx;
         y=yy;
-    }
-    Amoeba(Boolean c){
         click = c;
     }
-    void Xoay(){
-            System.out.println("Xoay hình Amoeba theo " + x + " và " + y );
+    Amoeba(){
+        
     }
-    void PhatRaAmThanh(){
+    protected String Xoay(){
+            System.out.println("Xoay hình Amoeba theo tọa độ x = " + x + " và y = " + y );
+            return sound;
+    }
+    protected String PhatRaAmThanh(){
             System.out.println("Phát ra âm thanh : " + sound + " !!! ");
+            return sound;
     }
-
+    private void clickOrUnclick(){
+        if(click == true){
+            Xoay();
+            PhatRaAmThanh();
+        }
+        else System.out.println("Chưa click !!!");
+        
+    }
+    public void getClick(){
+        clickOrUnclick();       
+    }
 }

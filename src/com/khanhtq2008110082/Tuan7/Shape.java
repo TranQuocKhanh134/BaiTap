@@ -6,10 +6,12 @@ package com.khanhtq2008110082.Tuan7;
 
 public class Shape {
         private String sound = "a";
-    void Xoay(){
+    protected String Xoay(){
             System.out.println("Xoay hình tròn 360 độ !!");
+        return sound;
     }
-    void PhatRaAmThanh(){
+    protected String PhatRaAmThanh(){
             System.out.println("Phát ra âm thanh : "+ sound +"  !!! ");
+        return sound;
     }
 }
