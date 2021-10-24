@@ -2,10 +2,10 @@
 *Ngày tạo : 20 thg 10, 2021
 *Tác giả : Trần Quốc Khánh
 */
-package com.khanhtq2008110082.Tuan7;
+package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Triangle extends Shape{
-    String sound = "HinhTron.HIF";
+    String sound = "HinhTamGiac.HIF";
     Boolean click ;
     protected Triangle(Boolean c){
         click = c;
