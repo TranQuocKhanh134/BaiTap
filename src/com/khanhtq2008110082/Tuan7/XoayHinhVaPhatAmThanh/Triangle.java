@@ -5,24 +5,12 @@
 package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Triangle extends Shape{
-    String sound = "HinhTamGiac.HIF";
     Boolean click ;
-    protected Triangle(Boolean c){
-        click = c;
+    protected Triangle(String s){
+        super(s);
     }
-    protected String PhatRaAmThanh(){
-        System.out.println("Phát ra âm thanh : "+ sound);
-        return sound;
+    protected void PhatRaAmThanh(){
+        System.out.println("Phát ra âm thanh : "+ getSound());
     }
-    private void clickOrUnclick(){
-        if(click == true){
-            Xoay();
-            PhatRaAmThanh();
-        }
-        else System.out.println("Chưa click !!!");
-        
-    }
-    public void getClick(){
-        clickOrUnclick();       
-    }
+    
 }

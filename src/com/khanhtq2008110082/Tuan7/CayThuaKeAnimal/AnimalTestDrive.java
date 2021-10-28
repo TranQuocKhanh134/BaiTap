@@ -11,11 +11,11 @@ public class AnimalTestDrive {
         suTu.eat();
         suTu.roam();
         suTu.findFood();*/
-        Dog cho = new Dog();
+        /*Dog cho = new Dog();
         cho.eat();
         cho.makeNoise();
         cho.Sleep();
-        cho.roam();
+        cho.roam();*/
         /*Woft soi = new Woft();
         soi.eat();
         soi.roam();
@@ -24,5 +24,7 @@ public class AnimalTestDrive {
         meo.eat();
         meo.roam();
         meo.makeNoise();*/
+        Hippo haMa = new Hippo("ha ma ");
+        System.out.println("ten cua ha ma la : " + haMa.getName());
     }
 }

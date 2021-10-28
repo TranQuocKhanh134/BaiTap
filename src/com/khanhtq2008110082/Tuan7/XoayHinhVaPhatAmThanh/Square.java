@@ -5,24 +5,12 @@
 package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Square extends Shape{
-    protected String sound = "HinhVuong.HIF";
     protected Boolean click ;
-    Square(Boolean c){
-        click = c;
+    Square(String s){
+        super(s);
     }
-    protected String PhatRaAmThanh(){
-        System.out.println("Phát ra âm thanh : "+ sound);
-        return sound;
+    protected void PhatRaAmThanh(){
+        System.out.println("Phát ra âm thanh : "+ getSound());
     }
-    private void clickOrUnclick(){
-        if(click == true){
-            Xoay();
-            PhatRaAmThanh();
-        }
-        else System.out.println("Chưa click !!!");
-        
-    }
-    public void getClick(){
-        clickOrUnclick();       
-    }
+    
 }

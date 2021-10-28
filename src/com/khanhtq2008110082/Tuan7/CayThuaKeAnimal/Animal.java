@@ -11,6 +11,7 @@ public class Animal {
     protected int hunger;
     protected float boundaries;
     protected String sound; 
+    private String name;
     protected void eat(){
         System.out.println("Ăn thức ăn : "+ food);
     }
@@ -26,4 +27,17 @@ public class Animal {
     protected void Sleep(){
         System.out.println("zzzZZZZzzzzzzzzzz");
     }
+    public Animal(){
+        System.out.println("create a animal");
+    }
+    public Animal(String n) {
+        name = n;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return this.name;
+    }
+
 }

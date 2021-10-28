@@ -16,23 +16,27 @@ public class TestDrive {
         System.out.println("================================================");
         switch (luaChon) {
             case 1:
-                Square hinh1 = new Square(true);//cho rằng đây là click 
-                hinh1.getClick();
+                Square hinh1 = new Square("HinhVuong.HIF");
+                hinh1.Xoay();
+                hinh1.PhatRaAmThanh();
                 System.out.println("================================================");   
                 break;
             case 2:
-                Circle hinh2 = new Circle(true);//cho rằng đây là click 
-                hinh2.getClick();
+                Circle hinh2 = new Circle("HinhTron.HIF");
+                hinh2.Xoay();
+                hinh2.PhatRaAmThanh(); 
                 System.out.println("================================================");
                 break;
             case 3:
-                Triangle hinh3 = new Triangle(true);//cho rằng đây là click 
-                hinh3.getClick();
+                Triangle hinh3 = new Triangle("HinhTamGiac.HIF");
+                hinh3.Xoay();
+                hinh3.PhatRaAmThanh();
                 System.out.println("================================================");
                 break;
             case 4:
-                Amoeba hinh4 = new Amoeba(10, 5,true);//cho rằng đây là click & x=1=;y=5;
-                hinh4.getClick();
+                Amoeba hinh4 = new Amoeba(10, 5,"Amoeba.AIF");// x=1=;y=5;
+                hinh4.Xoay();
+                hinh4.PhatRaAmThanh();
                 System.out.println("================================================");
                 break;
             default:

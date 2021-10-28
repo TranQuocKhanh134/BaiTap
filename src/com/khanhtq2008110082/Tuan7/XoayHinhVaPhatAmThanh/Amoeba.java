@@ -5,35 +5,23 @@
 package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Amoeba extends Shape{
-    String sound = "Amoeba.AIF";
     Boolean click = true;
     int x;
     int y;
-    Amoeba(int xx , int yy,Boolean c){
+    Amoeba(int xx , int yy,String s){
+        super(s);
         x=xx;
         y=yy;
-        click = c;
+       
     }
-    Amoeba(){
-        
+    Amoeba(String s){
+        super(s);
     }
-    protected String Xoay(){
+    protected void Xoay(){
             System.out.println("Xoay hình Amoeba theo tọa độ x = " + x + " và y = " + y );
-            return sound;
+            
     }
-    protected String PhatRaAmThanh(){
-            System.out.println("Phát ra âm thanh : " + sound + " !!! ");
-            return sound;
-    }
-    private void clickOrUnclick(){
-        if(click == true){
-            Xoay();
-            PhatRaAmThanh();
-        }
-        else System.out.println("Chưa click !!!");
-        
-    }
-    public void getClick(){
-        clickOrUnclick();       
+    protected void PhatRaAmThanh(){
+            System.out.println("Phát ra âm thanh : " + getSound() + " !!! ");       
     }
 }
