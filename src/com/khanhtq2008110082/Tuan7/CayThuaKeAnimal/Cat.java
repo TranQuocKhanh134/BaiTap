@@ -5,7 +5,10 @@
 package com.khanhtq2008110082.Tuan7.CayThuaKeAnimal;
 
 public class Cat extends Felidae {
-    protected String food = "Chuột và cá (mèo nuôi thi ăn pate)";
+    public Cat(String n) {
+        super(n);
+    }
+    private String food = "Chuột và cá (mèo nuôi thi ăn pate)";
     protected void eat(){
         System.out.println("Thức ăn của mèo là : " + food);
     }

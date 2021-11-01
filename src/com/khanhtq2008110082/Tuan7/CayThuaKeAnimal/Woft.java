@@ -5,7 +5,10 @@
 package com.khanhtq2008110082.Tuan7.CayThuaKeAnimal;
 
 public class Woft extends Canine {
-    protected String food = " Thịt "; 
+    public Woft(String n) {
+        super(n);
+    }
+    private String food = " Thịt "; 
     protected void eat(){
         System.out.println("Sói thì ăn : " + food);
     }

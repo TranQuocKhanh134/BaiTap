@@ -5,12 +5,12 @@
 package com.khanhtq2008110082.Tuan7.CayThuaKeAnimal;
 
 public class Animal {
-    protected String picture;
-    protected int age;
-    protected String food;
-    protected int hunger;
-    protected float boundaries;
-    protected String sound; 
+    private String picture;
+    private int age;
+    private String food;
+    private int hunger;
+    private float boundaries;
+    private String sound; 
     private String name;
     protected void eat(){
         System.out.println("Ăn thức ăn : "+ food);

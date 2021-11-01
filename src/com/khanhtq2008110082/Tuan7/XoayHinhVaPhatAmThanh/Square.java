@@ -5,9 +5,8 @@
 package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Square extends Shape{
-    protected Boolean click ;
-    Square(String s){
-        super(s);
+    Square(String s , boolean c){
+        super(s,c);
     }
     protected void PhatRaAmThanh(){
         System.out.println("Phát ra âm thanh : "+ getSound());

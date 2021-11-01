@@ -5,7 +5,10 @@
 package com.khanhtq2008110082.Tuan7.CayThuaKeAnimal;
 
 public class Dog extends Canine {
-    String food = "thức ăn cho chó ";
+    private String food = "thức ăn cho chó ";
+    public Dog(String n){
+        super(n);
+    }
     protected void makeNoise(){
         System.out.println("gauuu gauuu");
     }

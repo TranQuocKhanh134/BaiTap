@@ -5,20 +5,24 @@
 package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Amoeba extends Shape{
-    Boolean click = true;
-    int x;
-    int y;
-    Amoeba(int xx , int yy,String s){
-        super(s);
+    private boolean click;
+    private int x;
+    private int y;
+    public Amoeba(int xx , int yy,String s,boolean c){
+        super(s,c);
+        click = c;
         x=xx;
         y=yy;
        
     }
-    Amoeba(String s){
-        super(s);
+    public Amoeba(String s , boolean c){
+        super(s,c);
     }
     protected void Xoay(){
+        if(click == true)
             System.out.println("Xoay hình Amoeba theo tọa độ x = " + x + " và y = " + y );
+        else
+            System.out.println("Chưa click");
             
     }
     protected void PhatRaAmThanh(){

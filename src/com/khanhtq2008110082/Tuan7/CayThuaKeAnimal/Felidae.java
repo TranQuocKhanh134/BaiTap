@@ -5,6 +5,9 @@
 package com.khanhtq2008110082.Tuan7.CayThuaKeAnimal;
 
 public class Felidae extends Animal {//thú họ mèo
+    public Felidae(String n) {
+        super(n);
+    }
     protected void roam(){
         System.out.println("Đi lang thang một mình !!!");//thú họ mèo có tập tính đi săn một mình
     }

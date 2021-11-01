@@ -5,9 +5,8 @@
 package com.khanhtq2008110082.Tuan7.XoayHinhVaPhatAmThanh;
 
 public class Circle extends Shape {
-    private Boolean click;
-    protected Circle(String s){
-        super(s);
+    protected Circle(String s , boolean c){
+        super(s,c);
     }
     protected void PhatRaAmThanh(){
         System.out.println("Phát ra âm thanh : "+ getSound());

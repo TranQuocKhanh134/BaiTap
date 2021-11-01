@@ -16,25 +16,25 @@ public class TestDrive {
         System.out.println("================================================");
         switch (luaChon) {
             case 1:
-                Square hinh1 = new Square("HinhVuong.HIF");
+                Square hinh1 = new Square("HinhVuong.HIF" , true);
                 hinh1.Xoay();
                 hinh1.PhatRaAmThanh();
                 System.out.println("================================================");   
                 break;
             case 2:
-                Circle hinh2 = new Circle("HinhTron.HIF");
+                Circle hinh2 = new Circle("HinhTron.HIF" , false);
                 hinh2.Xoay();
                 hinh2.PhatRaAmThanh(); 
                 System.out.println("================================================");
                 break;
             case 3:
-                Triangle hinh3 = new Triangle("HinhTamGiac.HIF");
+                Triangle hinh3 = new Triangle("HinhTamGiac.HIF",false);
                 hinh3.Xoay();
                 hinh3.PhatRaAmThanh();
                 System.out.println("================================================");
                 break;
             case 4:
-                Amoeba hinh4 = new Amoeba(10, 5,"Amoeba.AIF");// x=1=;y=5;
+                Amoeba hinh4 = new Amoeba(10, 5,"Amoeba.AIF",true);// x=1=;y=5;
                 hinh4.Xoay();
                 hinh4.PhatRaAmThanh();
                 System.out.println("================================================");

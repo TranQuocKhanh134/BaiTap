@@ -5,6 +5,9 @@
 package com.khanhtq2008110082.Tuan7.CayThuaKeAnimal;
 
 public class Canine extends Animal {//kiểu thú có nanh
+    public Canine(String n) {
+        super(n);
+    }
     protected void roam(){
         System.out.println("Đi lang thang cùng đồng bọn !!!");//thú có nanh có kiểu săn mồi bầy đàn
     }
