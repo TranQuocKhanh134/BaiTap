@@ -7,7 +7,8 @@ package com.KiemTraGiuaKi;
 public class NhanVien extends Nguoi{
     private float heSoLuong;
     public void setHeSoLuong(float heSoLuong){
-        this.heSoLuong = heSoLuong;
+        if(heSoLuong > 0)
+            this.heSoLuong = heSoLuong;
     }
     public double getHeSoLuong(){
         return this.heSoLuong;

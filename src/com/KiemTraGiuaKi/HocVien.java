@@ -9,13 +9,15 @@ public class HocVien extends Nguoi {
     private float diemMonHoc2;
     private static int soLuongHV;
     public void setDiemMonHoc1(float diemMonHoc1){
-        this.diemMonHoc1 = diemMonHoc1;
+        if(diemMonHoc1 >= 0 && diemMonHoc1 <=10)
+            this.diemMonHoc1 = diemMonHoc1;
     }
     public float getDiemMonHoc1(){
         return this.diemMonHoc1;
     }
     public void setDiemMonHoc2(float diemMonHoc2){
-        this.diemMonHoc2 = diemMonHoc2;
+        if(diemMonHoc2 >= 0 && diemMonHoc2 <=10)
+            this.diemMonHoc2 = diemMonHoc2;
     }
     public float getDiemMonHoc2(){
         return this.diemMonHoc2;

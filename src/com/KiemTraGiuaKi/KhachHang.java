@@ -14,7 +14,8 @@ public class KhachHang extends Nguoi {
         return this.tenCongTy;
     }
     public void setTriGiaDonHang(double triGiaDonHang){
-        this.triGiaDonHang = triGiaDonHang;
+        if(triGiaDonHang > 0)
+            this.triGiaDonHang = triGiaDonHang;
     }
     public double getTriGiaDonHang(){
         return this.triGiaDonHang;
