@@ -12,11 +12,10 @@ public class QuanLyTestDrive {
         sv.setDiemMonHoc2(6);
         sv.setHoTen("Nguyễn Văn A");
         sv.setDiaChi("1 Nguyễn Văn Mại , p4 , Q.Tân Bình");
-        sv.diemTB();
+        sv.setSoLuongHV(20);
         ds.them(sv);
         NhanVien nv = new NhanVien();
         nv.setHeSoLuong(5);
-        nv.tinhLuong();
         nv.setHoTen("Nguyễn Văn B");
         nv.setDiaChi("2 Nguyễn Văn Mại , p4 , Q.Tân Bình");
         ds.them(nv);
