@@ -39,5 +39,9 @@ public class Animal {
     public String getName(){
         return this.name;
     }
+    public void Introduce(){
+        this.makeNoise();
+        System.out.println("i'm " + getName());
+    }
 
 }

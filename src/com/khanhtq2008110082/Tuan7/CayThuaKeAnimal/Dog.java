@@ -10,7 +10,7 @@ public class Dog extends Canine {
         super(n);
     }
     protected void makeNoise(){
-        System.out.println("gauuu gauuu");
+        System.out.println("Chó kêu : gauuu gauuu");
     }
     protected void eat(){
         System.out.println("Ăn thức ăn : " + food);

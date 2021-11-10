@@ -4,7 +4,7 @@
 */
 package com.khanhtq2008110082.Tuan8.HinhChuNhat;
 
-public class hinhchunhat {
+public class HinhChuNhat {
 	//khai báo thuộc tính
 	double chieudai;
 	double chieurong;
@@ -33,8 +33,8 @@ public class hinhchunhat {
 		return this.chieurong;
 	}
 	//hàm tạo dùng để khởi tạo đối tượng
-	public  hinhchunhat() {}
-	public hinhchunhat(double cd,double cr) {
+	public  HinhChuNhat() {}
+	public HinhChuNhat(double cd,double cr) {
 		if (cd>0) {
 			this.chieudai=cd;
 		}else {
@@ -57,8 +57,11 @@ public class hinhchunhat {
 	@Override
 	//tạo mẫu in
 	public String toString() {
-		String s="";
-		s+=s.format("chiều dài là: %10s|chiều rộng là: %10s", getchieudai(),getchieurong());
+		String s;
+		s = "Chiều dài là : " + getchieudai() +"\nChiều rộng là : " + getchieurong() + "\nChu vi là : " + tinhchuvi(getchieudai(), getchieurong()) + "\nDiện tích là : " + tinhdientich(getchieudai(), getchieurong());
 		return s;
+	}
+	public void xuat(){
+		System.out.println(toString());
 	}
 }

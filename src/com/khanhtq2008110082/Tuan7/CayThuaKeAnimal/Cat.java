@@ -12,4 +12,8 @@ public class Cat extends Felidae {
     protected void eat(){
         System.out.println("Thức ăn của mèo là : " + food);
     }
+    @Override
+    public void makeNoise() {
+        System.out.println("mèo kêu : meo meo");
+    }
 }
